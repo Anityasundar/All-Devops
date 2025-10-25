@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: website-deployment
+  namespace: nginx
+  labels:
+    app: my-website
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-website
+
+  template:
+    metadata:
+      labels:
+        app: my-website
+
+    spec:
+      containers:
+      - name: my-website-container
+        image: chinuvalentine/my-website:latest
+        ports:
+        - containerPort: 3000
+
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"
+            

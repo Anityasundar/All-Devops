@@ -1,0 +1,6 @@
+This is the document how we can use the VPA,
+
+here we've created all the required files like all the frontend and backend files with all the "yml" file like deployment files, service file and vpa files. but for running or using the feature of K8s we should needs some dependency like install some features of k8s, so we should needs to install that after that we can use the features. so we can ask to the chatGpt, it will help us to get code from online. So here in this document we should needs to install some documents.
+
+
+Thanks.
