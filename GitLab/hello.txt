@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+this is the file created by MasterBranch
+=======
+this is created by branch chinu
+
+this is the file I'm updating in chinu branch at 01:13
+
+
+same file modified bt master branch at 1:27
+
+this is the updated version of new VIM file 4.0 and time is 1:43
+
+new update 5.0 at 1:46
+>>>>>>> chinu
