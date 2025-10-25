@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: addition-app
+  namespace: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: addition
+  template:
+    metadata:
+      labels:
+        app: addition
+    spec:
+      containers:
+      - name: addition-app
+        image: chinuvalentine/pyapp:latest
+        ports:
+        - containerPort: 5000
+

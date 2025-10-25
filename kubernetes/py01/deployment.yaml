@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: letter-counter-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: letter-counter
+  template:
+    metadata:
+      labels:
+        app: letter-counter
+    spec:
+      containers:
+      - name: letter-counter
+        image: chinuvalentine/anitya:latest
+        ports:
+        - containerPort: 5000
+
